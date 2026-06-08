@@ -1,0 +1,1 @@
+# Dette er eksamens oppgaven for 2026
