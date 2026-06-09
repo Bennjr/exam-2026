@@ -4,6 +4,8 @@
 - GPO, GPO eller group policy, er et sett med rettigheter som kan designeres til OU eller spesifike brukere.
 - OU, OU eller orginasational units er laveste nivås gruppering, som vil at det er ingenting som grupperer OU, det er her du vil designere Group policies 
 
+---
+
 ## Hvordan sette opp bruker
 For å sette opp en bruker i acitve directory må du først navigere til ``Active Directory Users and Computers console``
 
@@ -25,6 +27,8 @@ Du vil nå få opp en popup vindu der du kan administrere:
 - Om bruker kan skifte passord
 - Om passordet må oppdateres etterhvert
 - Om brukeren er deaktivert
+
+---
 
 ## Hvordan administrere mappe-tilgang og filnivå
 For å kunne administrere tilgang til filer og mapper kan du enten skifte på brukere spesifikt eller en gruppe med brukere. For å administerere rettigheter til en OU (Organisational unit) må du lage en GPO (Group policy), en GPO beskriver rettigheter som skal gjelde for hvem enn du setter de på. 
