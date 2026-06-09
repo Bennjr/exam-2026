@@ -25,7 +25,7 @@ export function Nav() {
                     <li>
                         <Link
                             href="/"
-                            className="rounded-full bg-zinc-200 px-5 py-3 text-sm font-medium text-black transition hover:bg-zinc-300 cursor-pointer"
+                            className="rounded-full px-5 py-3 text-sm font-medium text-black transition hover:bg-zinc-300 cursor-pointer"
                         >
                             Hjem
                         </Link>
@@ -33,7 +33,7 @@ export function Nav() {
                     <li>
                         <Link
                             href="/om-oss"
-                            className="rounded-full bg-zinc-200 px-5 py-3 text-sm font-medium text-black transition hover:bg-zinc-300 cursor-pointer"
+                            className="rounded-full px-5 py-3 text-sm font-medium text-black transition hover:bg-zinc-300 cursor-pointer"
                         >
                             Om oss
                         </Link>
@@ -42,7 +42,7 @@ export function Nav() {
 
                 <Link
                     href="/login"
-                    className="rounded-full bg-zinc-200 px-5 py-3 text-sm font-medium text-black transition hover:bg-zinc-300 cursor-pointer"
+                    className="rounded-full bg-red-500 px-5 py-3 text-sm font-medium text-white transition hover:bg-red-600 cursor-pointer"
                 >
                     Logg inn
                 </Link>

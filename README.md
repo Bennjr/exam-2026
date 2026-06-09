@@ -2,6 +2,8 @@
 
 ## Teknologier
 - Nextjs
+- Cisco packet tracer
+- Active directory
 
 ## Hvordan kjøre
 Først må du inn i mappen der all koden ligger

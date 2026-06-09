@@ -31,18 +31,26 @@ Du vil nå få opp en popup vindu der du kan administrere:
 ---
 
 ## Hvordan administrere mappe-tilgang og filnivå
-For å kunne administrere tilgang til filer og mapper kan du enten skifte på brukere spesifikt eller en gruppe med brukere. For å administerere rettigheter til en OU (Organisational unit) må du lage en GPO (Group policy), en GPO beskriver rettigheter som skal gjelde for hvem enn du setter de på. 
+For å kunne administrere må du først oprette grupper. Dette gjør du ved å høyreklikke og trykke new også group
 
-For å opprette en GPO, søk opp Group policy Management i ``Windows søkemonitoren``
+![image](./dependencies/ad-new-group.png)
 
-![image](./dependencies/ad-group-policy.png)
+legg så til medlemmer
 
-Eller velg det i ``Server management``
+![image](./dependencies/ad-members.png)
 
-![image](./dependencies/ad-servermanagement-group-policy-button.png)
+Åpne så ``File and storage Services`` og legg til en ny share ved å høyre klikke og trykke ``new share``
 
-Du kan så opprette en group policy ved å høyre klikke en mappe ``Create a GPO in this domain, and Link it here``
+![image](./dependencies/ad-shares.png)
 
-![image](./dependencies/ad-create-gpo.png)
+Velg hvilkene mapper du vil at brukeren ikke skal ha tilgang til
 
-Du kan nå høyre klikke igjen og trykke ``Edit``. Du har nå laget en GPO knyttet til et domene, alle brukere under domenet og OU vil holde til disse reglene
+![image](./dependencies/ad-which-folder.png)
+
+Velg hvilken gruppe du vil ikke skal ha tilgang til mappen
+
+![image](./dependencies/ad-choose-who.png)
+
+Klikk ``Create``. Nå vil brukeren ikke ha tilgang til mappen du spesifiserte
+
+![image](./dependencies/ad-no-permission.png)

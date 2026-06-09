@@ -34,9 +34,18 @@ export default function HomePage() {
                     <div className="mx-auto flex max-w-[1200px] flex-col gap-8 px-6 py-16">
                         <h1 className="text-2xl font-bold text-zinc-900">Våre tjenester</h1>
                         <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                            <ServiceCard />
-                            <ServiceCard />
-                            <ServiceCard />
+                            <ServiceCard
+                                title="Kontorløsninger"
+                                text="Moderne arbeidsplasser med høyhastighetsnett, møterom og fleksible leieordninger for både små og store team."
+                            />
+                            <ServiceCard
+                                title="Nettverksdrift"
+                                text="Trygg og stabil drift med overvåking, support og skreddersydd nettverksdesign for din virksomhet."
+                            />
+                            <ServiceCard
+                                title="Sikkerhets- og backup"
+                                text="Beskytt kritiske systemer med backup, tilgangskontroll og robuste løsninger som gir ro i hverdagen."
+                            />
                         </div>
                     </div>
                 </section>
@@ -79,13 +88,11 @@ export default function HomePage() {
 }
 
 
-function ServiceCard() {
+function ServiceCard({ title, text }: { title: string; text: string }) {
     return (
-        <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm text-zinc-900">
-            <h2 className="text-xl font-semibold tracking-tight">Kontorutleie</h2>
-            <p className="mt-2 text-sm text-zinc-600">
-                Vi tilbyr moderne og fleksible kontorlokaler for bedrifter i alle størrelser. Våre kontorer er utstyrt med alt du trenger for å jobbe effektivt, inkludert høyhastighetsinternett, møblerte arbeidsområder og tilgang til møterom.
-            </p>
-        </div>
+        <article className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm text-zinc-900">
+            <h2 className="text-xl font-semibold tracking-tight">{title}</h2>
+            <p className="mt-2 text-sm text-zinc-600">{text}</p>
+        </article>
     );
 }

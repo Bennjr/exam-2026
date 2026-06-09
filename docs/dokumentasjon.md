@@ -11,3 +11,9 @@
 13:00 Drift delen må også gjøres så jeg begynner så vidt på den, jeg må legge til brannmur og dele opp i vlan
 
 13:30 Jeg starter på cisco packet tracer og lager et vlan oppsett til å visualisere brannmur og subnett
+
+14:00 jeg forsetter på utviklings delen
+
+15:00 jeg begynner og nerme meg slutten nå gjør jeg noen siste endringer på brukerstøtte delen
+
+15:20 jeg er ferdig med alt nå skal jeg bare se gjennom

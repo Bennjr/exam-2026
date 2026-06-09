@@ -5,7 +5,7 @@ Vi må lage en skisse for et nettverk som enda ikke eksisterer. Det er behov for
 
 Jeg har brukt cisco packet tracer for å visualisere vlan brannmur og generell nettverksoppsett
 
-[image](../dependencies/drift-vlan.png)
+![image](../dependencies/drift-vlan.png)
 
 ## Forklaring
 Jeg deler nettverket opp i tre subnett. Med en hovedruter, en felles brannmur også en switch som deler opp i vlan. Jeg har så en switch for hver av kontorene som de kan koble seg til med kabel og sette opp aksesspunkt hvis nødvendig. 
@@ -38,14 +38,14 @@ Slik vil nettverksoppsesse se ut i tabell
 
 | Fra        | Til        | Tillatt? |
 |------------|------------|----------|
-| BEDRIFT_A  | BEDRIFT_B  | ❌ Blokkert |
-| BEDRIFT_A  | BEDRIFT_C  | ❌ Blokkert |
-| BEDRIFT_B  | BEDRIFT_A  | ❌ Blokkert |
-| BEDRIFT_B  | BEDRIFT_C  | ❌ Blokkert |
-| BEDRIFT_C  | BEDRIFT_A  | ❌ Blokkert |
-| BEDRIFT_C  | BEDRIFT_B  | ❌ Blokkert |
-| Alle VLAN  | Internett  | ✅ Tillatt  |
-| Internt    | Samme VLAN | ✅ Tillatt  |
+| BEDRIFT_A  | BEDRIFT_B  |  Blokkert |
+| BEDRIFT_A  | BEDRIFT_C  |  Blokkert |
+| BEDRIFT_B  | BEDRIFT_A  |  Blokkert |
+| BEDRIFT_B  | BEDRIFT_C  |  Blokkert |
+| BEDRIFT_C  | BEDRIFT_A  |  Blokkert |
+| BEDRIFT_C  | BEDRIFT_B  |  Blokkert |
+| Alle VLAN  | Internett  |  Tillatt  |
+| Internt    | Samme VLAN |  Tillatt  |
 
 
 ---
