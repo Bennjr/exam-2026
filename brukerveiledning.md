@@ -7,11 +7,11 @@
 ## Hvordan sette opp bruker
 For å sette opp en bruker i acitve directory må du først navigere til ``Active Directory Users and Computers console``
 
-[brukere og maskiner konsoll](./dependencies/ad-users-computers.png)
+![brukere og maskiner konsoll](./dependencies/ad-users-computers.png)
 
 Når du har gått inne på denne menyen vil et nytt vindu poppe opp, der du kan høyre klikke på mappen du vil legge brukeren til i, så velger du ``new`` også ``user``
 
-[legg til bruker](./dependencies/ad-add-user.png)
+![legg til bruker](./dependencies/ad-add-user.png)
 
 Du vil nå få opp en popup vindu der du kan administrere: 
 - Fornavn: (optional)
@@ -31,14 +31,14 @@ For å kunne administrere tilgang til filer og mapper kan du enten skifte på br
 
 For å opprette en GPO, søk opp Group policy Management i ``Windows søkemonitoren``
 
-[image](./dependencies/ad-group-policy.png)
+![image](./dependencies/ad-group-policy.png)
 
 Eller velg det i ``Server management``
 
-[image](./dependencies/ad-servermanagement-group-policy-button.png)
+![image](./dependencies/ad-servermanagement-group-policy-button.png)
 
 Du kan så opprette en group policy ved å høyre klikke en mappe ``Create a GPO in this domain, and Link it here``
 
-[image](./dependencies/ad-create-gpo.png)
+![image](./dependencies/ad-create-gpo.png)
 
 Du kan nå høyre klikke igjen og trykke ``Edit``. Du har nå laget en GPO knyttet til et domene, alle brukere under domenet og OU vil holde til disse reglene
